@@ -117,7 +117,7 @@
 # The nodev mount option specifies that the filesystem cannot contain special devices.
 # Since the user partitions are not intended to support devices, set this option to ensure that
 # users cannot attempt to create block or character special devices.
-- include: all_mounts_facts.yaml
+- include_tasks: all_mounts_facts.yaml
   tags:
     - section1
     - level_1_server
@@ -145,7 +145,7 @@
 # The noexec mount option specifies that the filesystem cannot contain executable binaries.
 # Setting this option on a file system prevents users from executing programs from shared
 # memory. This deters users from introducing potentially malicious software on the system.
-- include: all_mounts_facts.yaml
+- include_tasks: all_mounts_facts.yaml
   tags:
     - section1
     - level_1_server
@@ -173,7 +173,7 @@
 # The nosuid mount option specifies that the filesystem cannot contain setuid files.
 # Setting this option on a file system prevents users from introducing privileged programs
 # onto the system and allowing non-root users to execute them.
-- include: all_mounts_facts.yaml
+- include_tasks: all_mounts_facts.yaml
   tags:
     - section1
     - level_1_server
